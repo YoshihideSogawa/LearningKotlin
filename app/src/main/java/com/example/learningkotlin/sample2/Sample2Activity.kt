@@ -15,6 +15,10 @@ class Sample2Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sample2)
+
+        if (savedInstanceState == null) {
+            fragmentManager.beginTransaction().add(android.R.id.content, Sample2Fragment()).commit()
+        }
     }
 
 }

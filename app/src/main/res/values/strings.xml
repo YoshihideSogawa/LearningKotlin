@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">LearningKotlin</string>
+
+    <string name="sample2_app_name">時計切り替えアプリ</string>
+    <string name="show_analog">アナログ表示</string>
+    <string name="show_digital">デジタル表示</string>
 </resources>

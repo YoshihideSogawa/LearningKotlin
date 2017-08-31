@@ -19,7 +19,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".sample2.Sample2Activity" />
+        <activity
+            android:name=".sample2.Sample2Activity"
+            android:label="@string/sample2_app_name" />
 
 
     </application>
