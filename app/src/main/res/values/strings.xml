@@ -4,4 +4,7 @@
     <string name="sample2_app_name">時計切り替えアプリ</string>
     <string name="show_analog">アナログ表示</string>
     <string name="show_digital">デジタル表示</string>
+
+    <string name="sample4_app_name">変数</string>
+    <string name="info_text">計算結果はLogCatに表示されます</string>
 </resources>

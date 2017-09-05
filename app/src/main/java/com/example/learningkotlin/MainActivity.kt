@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.ListView
 import com.example.learningkotlin.sample2.Sample2Activity
+import com.example.learningkotlin.sample4.Sample4Activity
 
 /**
  * メインActivity
@@ -31,7 +32,8 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemClickListener {
      * @return SampleListAdapterの1項目
      */
     private fun createListItems(): List<SampleItem> = ArrayList<SampleItem>().apply {
-        add(SampleItem("サンプル2", Sample2Activity::class.java))
+        add(SampleItem("第2章 アプリを動かしてみよう", Sample2Activity::class.java))
+        add(SampleItem("第4章 変数", Sample4Activity::class.java))
     }
 
     /**

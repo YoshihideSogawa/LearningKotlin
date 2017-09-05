@@ -17,7 +17,7 @@ class Sample2Activity : AppCompatActivity() {
         setContentView(R.layout.activity_sample2)
 
         if (savedInstanceState == null) {
-            fragmentManager.beginTransaction().add(android.R.id.content, Sample2Fragment()).commit()
+            fragmentManager.beginTransaction().add(R.id.content, Sample2Fragment()).commit()
         }
     }
 
