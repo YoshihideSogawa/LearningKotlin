@@ -20,20 +20,18 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val listView = findViewById<ListView>(R.id.list_view)
-        listView.adapter = SampleListAdapter(this, createListItems())
-        listView.onItemClickListener = this
+        findViewById<ListView>(R.id.list_view).apply {
+            adapter = SampleListAdapter(this@MainActivity, createListItems())
+            onItemClickListener = this@MainActivity
+        }
     }
 
     /**
      * リスト項目を作成します。
      * @return SampleListAdapterの1項目
      */
-    private fun createListItems(): List<SampleItem> {
-        val sampleItemList = ArrayList<SampleItem>()
-        sampleItemList.add(SampleItem("サンプル2", Sample2Activity::class.java))
-
-        return sampleItemList
+    private fun createListItems(): List<SampleItem> = ArrayList<SampleItem>().apply {
+        add(SampleItem("サンプル2", Sample2Activity::class.java))
     }
 
     /**

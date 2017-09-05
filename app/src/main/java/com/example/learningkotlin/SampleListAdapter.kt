@@ -25,15 +25,15 @@ class SampleListAdapter(context: Context, sampleDataList: List<SampleItem>) : Ar
         val holder: ViewHolder
 
         if (convertView == null) {
-            targetView = inflater.inflate(R.layout.list_item_sample, parent, false) ;
+            targetView = inflater.inflate(R.layout.list_item_sample, parent, false)
 
             holder = ViewHolder()
-            holder.title = targetView.findViewById<TextView>(R.id.item_title)
+            holder.title = targetView.findViewById(R.id.item_title)
 
             targetView.tag = holder
         } else {
             targetView = convertView
-            holder = targetView.getTag() as ViewHolder
+            holder = targetView.tag as ViewHolder
         }
 
         val sampleItem = getItem(position)
