@@ -8,6 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.learningkotlin.R
 
+// TODO:定数の書き方はこれで良いのか？命名規約としては大文字統一？
+const val TAG = "Variable"
+
 /**
  * 変数を用いた表示をするクラスです。
  */
@@ -20,27 +23,35 @@ class Sample4Fragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         // TODO:ここに変数の処理を書いていきましょう(System.outはLogCatに出ないね)
         val a = 123
-        Log.d("Variable", "aは$a")
+        Log.d(TAG, "aは$a")
 
         var tasu = 5
-        tasu = tasu + 3
-        Log.d("Variable", "$tasu")
+        tasu += 3
+        Log.d(TAG, "$tasu")
 
         var hiku = 5
-        hiku = hiku - 3
-        Log.d("Variable", "$hiku")
+        hiku -= 3
+        Log.d(TAG, "$hiku")
 
         var kakeru = 5
-        kakeru = kakeru * 3
-        Log.d("Variable", "$kakeru")
+        kakeru *= 3
+        Log.d(TAG, "$kakeru")
 
         var waru = 5
-        waru = waru / 3
-        Log.d("Variable", "$waru")
+        waru /= 3
+        Log.d(TAG, "$waru")
 
         var amari = 5
-        amari = amari % 3
-        Log.d("Variable", "$amari")
+        amari %= 3
+        Log.d(TAG, "$amari")
+
+        var kuwaeru = 5
+        kuwaeru++
+        Log.d(TAG, "$kuwaeru")
+
+        var herasu = 5
+        herasu--
+        Log.d(TAG, "$herasu")
     }
 
 }
