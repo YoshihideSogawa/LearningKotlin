@@ -58,6 +58,44 @@ class Sample4Fragment : Fragment() {
         var herasu = 5
         herasu--
         Log.d(TAG, "$herasu")
+
+        val kadai1 = 15 + 2
+        Log.d(TAG, "kadai1:$kadai1")
+
+        val kadai2 = -4 + 9
+        Log.d(TAG, "kadai2:$kadai2")
+
+        val kadai3 = 17 - 7
+        Log.d(TAG, "kadai3 $kadai3")
+
+        val kadai4 = 6 - 48
+        Log.d(TAG, "kadai4 $kadai4")
+
+        val kadai5 = 19 * 2
+        Log.d(TAG, "kadai5 $kadai5")
+
+        val kadai6 = -5 * 3
+        Log.d(TAG, "kadai6 $kadai6")
+
+        val kadai7: Int = 51 / 18
+        Log.d(TAG, "kadai7 $kadai7")
+
+        var kadai8: Double = 51.toDouble() // or 51.0
+        kadai8 /= 18
+        Log.d(TAG, "kadai8 $kadai8")
+
+        val kadai9: Int = -17 / 5
+        Log.d(TAG, "kadai9 $kadai9")
+
+        var kadai10: Double = -17.toDouble()
+        kadai10 /= 5
+        Log.d(TAG, "kadai10 $kadai10")
+
+        val kadai11 = 23 % 7
+        Log.d(TAG, "kadai11 $kadai11")
+
+        val kadai12 = 105 % 19
+        Log.d(TAG, "kadai12 $kadai12")
     }
 
 }
