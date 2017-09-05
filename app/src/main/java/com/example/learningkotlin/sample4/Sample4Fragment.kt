@@ -16,9 +16,15 @@ const val TAG = "Variable"
  */
 class Sample4Fragment : Fragment() {
 
+    /**
+     * Viewの作成を行います。
+     */
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View =
             inflater.inflate(R.layout.fragment_sample4, container, false)
 
+    /**
+     * 変数の計算と表示処理を行います。
+     */
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         // TODO:ここに変数の処理を書いていきましょう(System.outはLogCatに出ないね)
