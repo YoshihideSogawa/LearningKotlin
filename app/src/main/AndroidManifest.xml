@@ -25,6 +25,9 @@
         <activity
             android:name=".sample4.Sample4Activity"
             android:label="@string/sample4_app_name" />
+        <activity
+            android:name=".sample5.Sample5Activity"
+            android:label="@string/sample5_app_name" />
 
 
     </application>
