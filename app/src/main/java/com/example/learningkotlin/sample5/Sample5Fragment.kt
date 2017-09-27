@@ -45,7 +45,7 @@ class Sample5Fragment : Fragment(), View.OnClickListener {
      * クリックした時にここが呼び出されます。
      */
     override fun onClick(view: View) {
-        // 0〜３までのランダムな値を生成
+        // 0〜3までのランダムな値を生成
         val randomInt = Random().nextInt(4)
 
         // 本日の運勢をif文で決めます
